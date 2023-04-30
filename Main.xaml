@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>986,609</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1033,890</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -177,7 +177,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart DisplayName="Flujo" sap:VirtualizedContainerService.HintSize="1604,1426" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart DisplayName="Flujo" sap:VirtualizedContainerService.HintSize="1603.9999999999998,1426" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -195,11 +195,11 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">650,148.5</av:Point>
-            <av:Size x:Key="ShapeSize">200,81</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">750,229.5 750,336.5</av:PointCollection>
+            <av:Size x:Key="ShapeSize">200,83</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">750,231.5 750,336.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Solicitud de datos" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Solicitud de datos" sap:VirtualizedContainerService.HintSize="697.9999999999999,2411" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="Config" />
             <Variable x:TypeArguments="x:String" Name="ConfigText" />
@@ -211,26 +211,26 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Comment DisplayName="Comentario" sap:VirtualizedContainerService.HintSize="636,113" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Se solicitan los datos al end-point proporcionado y se hace la conversión respectiva de estos para su procesamiento en la UI" />
-          <ui:FileExistsX DisplayName="File Exists" Exists="[Config]" sap:VirtualizedContainerService.HintSize="636,133" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[$&quot;C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;]" />
-          <If Condition="[NOT Config]" sap:VirtualizedContainerService.HintSize="636,360" sap2010:WorkflowViewState.IdRef="If_1">
+          <ui:Comment DisplayName="Comentario" sap:VirtualizedContainerService.HintSize="636,115" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Se solicitan los datos al end-point proporcionado y se hace la conversión respectiva de estos para su procesamiento en la UI" />
+          <ui:FileExistsX DisplayName="File Exists" Exists="[Config]" sap:VirtualizedContainerService.HintSize="636,135" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[$&quot;C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;]" />
+          <If Condition="[NOT Config]" sap:VirtualizedContainerService.HintSize="636,362" sap2010:WorkflowViewState.IdRef="If_1">
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_38">
+              <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_38">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Throw Exception="[new  Exception($&quot;No existe el siguiente archivo error critico: C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                <Throw Exception="[new  Exception($&quot;No existe el siguiente archivo error critico: C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
               </Sequence>
             </If.Then>
             <If.Else>
               <Sequence sap2010:WorkflowViewState.IdRef="Sequence_39" />
             </If.Else>
           </If>
-          <ui:ReadTextFile File="{x:Null}" Content="[ConfigText]" DisplayName="Read Text File" FileName="[$&quot;C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;]" sap:VirtualizedContainerService.HintSize="636,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+          <ui:ReadTextFile File="{x:Null}" Content="[ConfigText]" DisplayName="Read Text File" FileName="[$&quot;C:\Users\{Environment.UserName}\Documents\BotConfig.txt&quot;]" sap:VirtualizedContainerService.HintSize="636,81" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
           <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="636,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[JsonConfig]" JsonString="[ConfigText]" />
-          <Assign sap:VirtualizedContainerService.HintSize="636,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+          <Assign sap:VirtualizedContainerService.HintSize="636,83" sap2010:WorkflowViewState.IdRef="Assign_25">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[ApiKey]</OutArgument>
             </Assign.To>
@@ -238,7 +238,7 @@
               <InArgument x:TypeArguments="x:String">[JsonConfig("API_KEY").ToString()]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="636,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+          <Assign sap:VirtualizedContainerService.HintSize="636,83" sap2010:WorkflowViewState.IdRef="Assign_26">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[OCR_Key]</OutArgument>
             </Assign.To>
@@ -246,15 +246,15 @@
               <InArgument x:TypeArguments="x:String">[JsonConfig("OCR_KEY").ToString()]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="636,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+          <Assign sap:VirtualizedContainerService.HintSize="636,83" sap2010:WorkflowViewState.IdRef="Assign_14">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[DatosDisponibles]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
             </Assign.Value>
           </Assign>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="636,974" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="636,978" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <TryCatch.Try>
               <Sequence DisplayName="Pida datos" sap:VirtualizedContainerService.HintSize="598,746" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
@@ -354,11 +354,11 @@
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">440,468.50000000000006</av:Point>
-                    <av:Size x:Key="ShapeSize">200,81</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">540,549.5 540,598.5</av:PointCollection>
+                    <av:Size x:Key="ShapeSize">200,83</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">540,551.5 540,598.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Consultar página de estado" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Consultar página de estado" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -869,11 +869,11 @@
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">440.00000000000006,598.5</av:Point>
-                        <av:Size x:Key="ShapeSize">200,81</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">540,679.5 540,748.5</av:PointCollection>
+                        <av:Size x:Key="ShapeSize">200,83</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">540,681.5 540,748.5</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Extraer PDF Estado" sap:VirtualizedContainerService.HintSize="722,3312" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <Sequence DisplayName="Extraer PDF Estado" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_20">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="Carpeta_Existe" />
                         <Variable x:TypeArguments="x:Boolean" Name="Archivo_Existe" />
@@ -904,12 +904,12 @@
                         </ui:IfElseIf.ConditionBlocks>
                       </ui:IfElseIf>
                       <ui:FileExistsX DisplayName="File Exists" Exists="[Archivo_Existe]" sap:VirtualizedContainerService.HintSize="660,133" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[$&quot;C:\Users\{Environment.UserName}\Downloads\Certificado estado cedula &quot;+Cedula+&quot;.pdf&quot;]" />
-                      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660,2428" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="660,2427" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                         <ui:IfElseIf.ConditionBlocks>
                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                             <ui:IfElseIfBlock BlockType="If" Condition="[Archivo_Existe]">
                               <ui:IfElseIfBlock.Then>
-                                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="609,2002" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="609,2001" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -938,18 +938,18 @@
                                       </ActivityFunc>
                                     </p:DigitizeDocument.OCREngine>
                                   </p:DigitizeDocument>
-                                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,619" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,618" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                                     <ui:IfElseIf.ConditionBlocks>
                                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                         <ui:IfElseIfBlock BlockType="If" Condition="[Texto_Digitalizado.Contains(&quot;VIGENTE&quot;)]">
                                           <ui:IfElseIfBlock.Then>
-                                            <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                            <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="496,192" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_21">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[Vigencia]</OutArgument>
                                                 </Assign.To>
@@ -1060,13 +1060,13 @@
                             <av:PointCollection x:Key="ConnectorLocation">540,829.5 540,859.5 420,859.5 420,189 650,189</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Envio de información" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence DisplayName="Envio de información" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,110" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;[&quot;+System.DateTime.Now.ToString()+&quot;] El estado de la cedula &quot;+Cedula+&quot; ES:  &quot;+Vigencia]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;[&quot;+System.DateTime.Now.ToString()+&quot;] El estado de la cedula &quot;+Cedula+&quot; ES:  &quot;+Vigencia]" />
                         </Sequence>
                         <FlowStep.Next>
                           <x:Reference>__ReferenceID2</x:Reference>
@@ -1082,10 +1082,10 @@
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">900,488.50000000000006</av:Point>
-                    <av:Size x:Key="ShapeSize">200,81</av:Size>
+                    <av:Size x:Key="ShapeSize">200,83</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Enviar correo" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Enviar correo" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
