@@ -3,12 +3,9 @@
   "description": "Minador de certificado de estado de cédula de ciudadanía",
   "main": "Main.xaml",
   "dependencies": {
-    "RestSharp": "[106.15.0]",
-    "System.Net.Http": "[4.3.4]",
-    "UiPath.Excel.Activities": "[2.20.1]",
+    "UiPath.IntelligentOCR.Activities": "[6.9.0]",
     "UiPath.Mail.Activities": "[1.19.0]",
     "UiPath.System.Activities": "[23.5.0-preview]",
-    "UiPath.Testing.Activities": "[23.5.0-preview]",
     "UiPath.UIAutomation.Activities": "[23.5.0-preview]",
     "UiPath.WebAPI.Activities": "[1.16.2]"
   },
@@ -16,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -59,6 +56,8 @@
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {},
+  "publishData": {
+    "iconUrl": ".package/robot-de-chat.png"
+  },
   "targetFramework": "Windows"
 }
